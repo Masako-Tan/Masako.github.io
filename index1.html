@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagian Landing Page</title>
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .videobackground{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(to right, rgba(37, 41, 87, 0.299), rgba(250, 127, 46, 0.308));
+            color: rgba(255, 255, 255, 0.542);
+            min-height: 100vh;
+            font-size: 2.5em;
+            position: relative;
+            overflow: hidden;
+            flex-direction: column;
+
+        }
+
+        .vidbg{
+            position: absolute;
+            bottom:0;
+            left: 0;
+            min-height: 100%;
+            min-width: 100%;
+            z-index: -1;
+        }
+
+        .explore{
+            background-color:rgba(255, 255, 255, 0.356);
+            z-index: -1;
+            border-radius: 10px;
+            border: none;
+            width: 200px;
+            height: 50px;
+            font-size: 25px;
+            margin-top: 20px;
+            cursor: pointer;
+            color: whitesmoke;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .explore:hover{
+            background-color: rgba(245, 118, 33, 0.299);
+        }  
+    </style>
+</head>
+
+<body>
+    <div class="videobackground">
+        <h1>Welcome to My Portfolio</h1>
+        <video class="vidbg" src="video/Cover.mp4" autoplay muted loop></video> 
+        <br>
+        <a href="index.html">
+            <button type="button" class="explore">Explore</button>
+        </a>
+    </div>
+</body>
+</html>
